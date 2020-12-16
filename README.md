@@ -1,2 +1,4 @@
-# External-API-Samples
-Documentation and sample code for using the Ferretly External API
+# External API Samples
+
+The Ferretly External API can be used by systems integrators to interface with the Ferretly ecosystem.
+
