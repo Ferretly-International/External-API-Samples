@@ -12,3 +12,8 @@ This repository contains documentation and sample projects that demonstrate how 
 
 **Organization** - a group of one or more subscribers. Subscribers within an organization can share 
 
+## Links
+
+Development endpoints: https://api-beta.ferretly.com
+
+[API Documentation](https://documenter.getpostman.com/view/13665914/TVmTca9e)
