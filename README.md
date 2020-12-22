@@ -17,3 +17,6 @@ This repository contains documentation and sample projects that demonstrate how 
 Development endpoints: https://api-beta.ferretly.com
 
 [API Documentation](https://documenter.getpostman.com/view/13665914/TVmTca9e)
+
+## Projects
+[fetch-info](fetch-info) - basic console app to fetch information known about your api key/client
