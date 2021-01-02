@@ -40,3 +40,4 @@ jobs:
           PACKAGE_NAME: FerretlyApiClient
           VERSION_REGEX: ^\s*<Version>(.*)<\/Version>\s*$
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+          TAG_FORMAT: apiClient_*
