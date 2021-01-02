@@ -30,7 +30,7 @@ jobs:
           PACKAGE_NAME: FerretlyApiClient
           VERSION_REGEX: ^\s*<Version>(.*)<\/Version>\s*$
           NUGET_KEY: ${{secrets.GITHUB_TOKEN}}
-          NUGET_SOURCE: https://nuget.pkg.github.com/ferretly/index.json
+          NUGET_SOURCE: https://nuget.pkg.github.com
     - name: Push NuGet.org Package
     # https://github.com/marketplace/actions/publish-nuget
       uses: rohith/publish-nuget@v2
