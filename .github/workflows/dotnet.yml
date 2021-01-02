@@ -21,7 +21,16 @@ jobs:
       run: dotnet restore ./fetch_info/fetch_info.sln 
     - name: Build
       run: dotnet build ./fetch_info/fetch_info.sln --no-restore --configuration Release
-    - name: Push
-      run: dotnet nuget push "./FerretlyClient/bin/Release/FerretlyClient.1.0.0.nupkg" -s https://nuget.pkg.github.com/ferretly/index.json -k ${GITHUB_TOKEN}  
+    - name: Push Github Package
+      run: dotnet nuget push "./FerretlyClient/bin/Release/FerretlyClient.1.0.0.nupkg" -s https://nuget.pkg.github.com/ferretly/index.json -k ${GITHUB_TOKEN} --skip-duplicate  
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+    - name: Push NuGet.org Package
+      uses: rohith/publish-nuget@v2
+      with:
+          # Filepath of the project to be packaged, relative to root of repository
+          PROJECT_FILE_PATH: FerretlyClient/FerretlyClient.csproj
+          PACKAGE_NAME: FerretlyApiClient
+          VERSION_FILE_PATH: Directory.Build.props
+          VERSION_REGEX: ^\s*<Version>(.*)<\/Version>\s*$
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
