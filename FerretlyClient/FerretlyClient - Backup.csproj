@@ -10,7 +10,7 @@
     <PackageId>FerretlyApiClient</PackageId>
     <Description>Classes useful for writing a client that uses the Ferretly External API</Description>
     <Version>1.1.0</Version>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
     <PackageProjectUrl>https://github.com/ferretly/External-API-Samples</PackageProjectUrl>
   </PropertyGroup>
 
