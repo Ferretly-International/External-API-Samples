@@ -11,6 +11,7 @@
     <Description>Classes useful for writing a client that uses the Ferretly External API</Description>
     <Version>1.0.1</Version>
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <PackageProjectUrl>https://github.com/ferretly/External-API-Samples</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
