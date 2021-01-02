@@ -23,7 +23,7 @@ jobs:
       run: dotnet build ./fetch_info/fetch_info.sln --no-restore --configuration Release
     - name: Push Github Package
     # https://github.com/marketplace/actions/publish-nuget
-      uses: rohith/publish-nuget@v2
+      uses: Rebel028/publish-nuget@2.6.0
       with:
           # Filepath of the project to be packaged, relative to root of repository
           PROJECT_FILE_PATH: FerretlyClient/FerretlyClient.csproj
@@ -31,6 +31,7 @@ jobs:
           VERSION_REGEX: ^\s*<Version>(.*)<\/Version>\s*$
           NUGET_KEY: ${{secrets.GITHUB_TOKEN}}
           NUGET_SOURCE: https://nuget.pkg.github.com
+          THOW_ERROR_IF_VERSION_EXISTS: false
     - name: Push NuGet.org Package
     # https://github.com/marketplace/actions/publish-nuget
       uses: rohith/publish-nuget@v2
