@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -7,6 +7,8 @@
     <Company>Ferretly</Company>
     <Product>Ferretly External API Client Package</Product>
     <RepositoryUrl>https://github.com/ferretly/External-API-Samples</RepositoryUrl>
+    <PackageId>FerretlyApiClient</PackageId>
+    <Description>Classes useful for writing a client that uses the Ferretly External API</Description>
   </PropertyGroup>
 
   <ItemGroup>
