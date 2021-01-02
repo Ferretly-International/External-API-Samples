@@ -22,4 +22,4 @@ jobs:
     - name: Build
       run: dotnet build ./fetch_info/fetch_info.sln --no-restore --configuration Release
     - name: Push
-      run: dotnet nuget push "./ferretlyclient/bin/Release/FerretlyClient.1.0.0.nupkg" --source "github"
+      run: dotnet nuget push "./ferretlyclient/bin/Release/FerretlyClient.1.0.0.nupkg"
