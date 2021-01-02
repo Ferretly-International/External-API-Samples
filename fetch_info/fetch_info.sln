@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fetch_info", "fetch_info.csproj", "{2A11E4D8-764C-41FC-A31F-E9E0127A4A60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FerretlyClient", "..\FerretlyClient\FerretlyClient.csproj", "{BE091E0B-B3E5-4BFA-BCB1-A54F4BD16EE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FerretlyClient", "..\FerretlyClient\FerretlyClient.csproj", "{BE091E0B-B3E5-4BFA-BCB1-A54F4BD16EE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F8F3E0F2-6400-4984-879D-A5115F511A50}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\dotnet.yml = ..\.github\workflows\dotnet.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

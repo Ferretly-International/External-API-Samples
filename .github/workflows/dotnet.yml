@@ -21,3 +21,7 @@ jobs:
       run: dotnet restore ./fetch_info/fetch_info.sln
     - name: Build
       run: dotnet build ./fetch_info/fetch_info.sln --no-restore
+    - name: Pack
+      run: dotnet pack ./ferretlyclient/ferretlyclient.csproj --configuration Release
+    - name: Push
+      run: dotnet nuget push "./ferretlyclient/bin/Release/FerretlyClient.1.0.0.nupkg" --source "github"

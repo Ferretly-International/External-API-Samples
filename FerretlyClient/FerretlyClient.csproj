@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Ferretly International</Authors>
+    <Company>Ferretly</Company>
+    <Product>Ferretly External API Client Package</Product>
+    <RepositoryUrl>https://github.com/ferretly/External-API-Samples</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
