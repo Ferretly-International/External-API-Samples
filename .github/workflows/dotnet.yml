@@ -22,6 +22,6 @@ jobs:
     - name: Build
       run: dotnet build ./fetch_info/fetch_info.sln --no-restore --configuration Release
     - name: Push
-      run: dotnet nuget push "./ferretlyclient/bin/Release/FerretlyClient.1.0.0.nupkg" -s https://nuget.pkg.github.com/ferretly/index.json -k ${GITHUB_TOKEN}  
+      run: dotnet nuget push "./FerretlyClient/bin/Release/FerretlyClient.1.0.0.nupkg" -s https://nuget.pkg.github.com/ferretly/index.json -k ${GITHUB_TOKEN}  
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
