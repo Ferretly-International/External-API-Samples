@@ -1,4 +1,5 @@
 ![.NET](https://github.com/ferretly/External-API-Samples/workflows/.NET/badge.svg)
+[![Nuget downloads](https://img.shields.io/nuget/v/ferretlyapiclient.svg)](https://www.nuget.org/packages/ferretlyapiclient/)
 
 # External API Samples
 
