@@ -28,6 +28,7 @@ namespace fetch_info
             
             Console.WriteLine($"Owner/Name: {clientInfo.Owner}");
             Console.WriteLine($"OrganizationId: {clientInfo.OrganizationId}");
+            Console.WriteLine($"Callback URL: {clientInfo.StatusUpdateCallbackUrl}");
         }
     }
 }
