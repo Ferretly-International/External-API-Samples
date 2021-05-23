@@ -6,4 +6,4 @@ Each API key is associated with a single Ferretly API "client". The client conta
  
 ## Getting Started
 
-Update appSettings.json to add the value of your API key to the `X-Api-Key` setting.
+Manage user secrets on the FerretlyClient project to specify your API key.
