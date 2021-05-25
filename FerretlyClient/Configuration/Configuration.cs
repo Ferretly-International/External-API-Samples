@@ -10,7 +10,8 @@ namespace FerretlyClient.Configuration
         public static IConfigurationRoot GetConfiguration()
         {
             var builder = new ConfigurationBuilder()
-                .AddJsonFile("appSettings.json", true, true);
+                .AddJsonFile("appSettings.json", true, true)
+                .AddUserSecrets<Client>();
 
             return builder.Build();
         }
