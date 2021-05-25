@@ -23,7 +23,7 @@ jobs:
       run: dotnet build ./fetch_info/fetch_info.sln --no-restore --configuration Release
     - name: Push Github Package
       if: ${{ github.event_name == 'push' }}
-      run: dotnet nuget push "./FerretlyClient/bin/Release/FerretlyApiClient.1.1.0.nupkg" -s https://nuget.pkg.github.com/ferretly/index.json -k ${GITHUB_TOKEN} --skip-duplicate  
+      run: dotnet nuget push "./FerretlyClient/bin/Release/FerretlyApiClient.1.2.0.nupkg" -s https://nuget.pkg.github.com/ferretly/index.json -k ${GITHUB_TOKEN} --skip-duplicate  
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
     - name: Push NuGet.org Package
