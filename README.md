@@ -17,7 +17,7 @@ This repository contains documentation and sample projects that demonstrate how 
 
 ## Links
 
-Development endpoints: https://api-beta.ferretly.com
+Development endpoints: https://api-beta.ferretly.com (note: these use our staging environment, and you will need to have an account and API key for this environment)
 
 [API Documentation](https://documenter.getpostman.com/view/13665914/TVmTca9e)
 
