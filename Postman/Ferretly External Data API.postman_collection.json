@@ -1,0 +1,1292 @@
+{
+	"info": {
+		"_postman_id": "d5c0a85c-7279-496b-848d-485f648cad6b",
+		"name": "Ferretly External Data API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11383311"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Api Client",
+					"item": [
+						{
+							"name": "Get information about the API client associated with the API key found in the request header",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/ApiClient",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"ApiClient"
+									]
+								},
+								"description": "Using the API key found in the request header, return information about the API client"
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/ApiClient",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"ApiClient"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"subscriberId\": \"ae126626-b79a-8ea7-81fe-8481b806124d\",\n \"organizationId\": \"urn:uuid:645e5ac5-bc9d-59a2-86a8-10f31cbb9324\",\n \"owner\": \"in incididunt\",\n \"permissions\": \"nisi\",\n \"statusUpdateCallbackUrl\": \"magna est\",\n \"clientSpecificProperties\": \"voluptate\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Update the web hook url associated with the API client. This is the URL which will receive callbacks from Ferretly",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"<string>\""
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/ApiClient/updateWebHook",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"ApiClient",
+										"updateWebHook"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"<string>\""
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/ApiClient/updateWebHook",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"ApiClient",
+												"updateWebHook"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"subscriberId\": \"ae126626-b79a-8ea7-81fe-8481b806124d\",\n \"organizationId\": \"urn:uuid:645e5ac5-bc9d-59a2-86a8-10f31cbb9324\",\n \"owner\": \"in incididunt\",\n \"permissions\": \"nisi\",\n \"statusUpdateCallbackUrl\": \"magna est\",\n \"clientSpecificProperties\": \"voluptate\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Refresh the API key associated with an API client.",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/ApiClient/refreshApiKey",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"ApiClient",
+										"refreshApiKey"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/ApiClient/refreshApiKey",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"ApiClient",
+												"refreshApiKey"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"apiClient\": {\n  \"subscriberId\": \"urn:uuid:01c58341-8b34-4686-f301-be19f7dad1ff\",\n  \"organizationId\": \"802d7fc2-5574-40d7-f92e-7dce00ac4d7b\",\n  \"owner\": \"non sint\",\n  \"permissions\": \"sint quis\",\n  \"statusUpdateCallbackUrl\": \"consequat elit nisi aliqua minim\",\n  \"clientSpecificProperties\": \"est Ut mollit\"\n },\n \"apiKey\": \"eiusmod\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get the Ferretly Data.DTO.Organization related to the API key",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/ApiClient/getOrganization",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"ApiClient",
+										"getOrganization"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/ApiClient/getOrganization",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"ApiClient",
+												"getOrganization"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": \"a5489685-7e9c-2426-9eb4-9a9c4a65e1d3\",\n \"name\": \"exercitation do Duis dol\",\n \"purchasedAnalystSupport\": true,\n \"affiliate_guid\": \"urn:uuid:c606b0ef-d309-180e-b585-f29fbf932157\",\n \"affiliate\": {\n  \"_id\": \"12d8fb23-9373-908c-136e-f3ef8b502851\",\n  \"_owner\": \"urn:uuid:35a5cf4a-de48-3c7e-a95e-2d0cce520ae9\",\n  \"email\": \"voluptate nisi\",\n  \"status\": \"proident pariatur amet\",\n  \"_createdDate\": \"2017-08-26T00:13:27.954Z\",\n  \"_updatedDate\": \"1976-11-07T15:47:49.852Z\",\n  \"companyName\": \"quis est\",\n  \"websiteAddress\": \"incididunt voluptate laboris\",\n  \"whitelabel\": true,\n  \"logo\": \"et minim occaecat \",\n  \"companyAddress\": \"laborum ut adipisicing Excepteur\",\n  \"companyAddress2\": \"fugiat commodo Lorem sunt ex\",\n  \"companyCity\": \"qui Ut officia cupidatat\",\n  \"companyPostalCode\": \"tempor amet incididunt consequat\",\n  \"companyState\": \"proident in\"\n },\n \"credits_available\": 4718829,\n \"credits_used\": -92424740,\n \"stripe_customerId\": \"dolor Ut\",\n \"socialMediaScraperYears\": 12503310,\n \"planType\": \"Basic\",\n \"paymentMethod\": \"InApp\",\n \"isSubscriptionActive\": false,\n \"stripeSubscriptionId\": \"occaecat veniam sint Excepteur\",\n \"stripePlanId\": \"ullamco\",\n \"stripePricingId\": \"tempor cillum in velit\",\n \"numberOfContinuousScreeningSubjectsEnabled\": -61736209\n}"
+								}
+							]
+						},
+						{
+							"name": "Update the Data.Models.ExternalAPI.ExternalAPIClient.ClientSpecificProperties associated with the API client.",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"<string>\""
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/ApiClient/updateClientSpecificProperties",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"ApiClient",
+										"updateClientSpecificProperties"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\"<string>\""
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/ApiClient/updateClientSpecificProperties",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"ApiClient",
+												"updateClientSpecificProperties"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"subscriberId\": \"ae126626-b79a-8ea7-81fe-8481b806124d\",\n \"organizationId\": \"urn:uuid:645e5ac5-bc9d-59a2-86a8-10f31cbb9324\",\n \"owner\": \"in incididunt\",\n \"permissions\": \"nisi\",\n \"statusUpdateCallbackUrl\": \"magna est\",\n \"clientSpecificProperties\": \"voluptate\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Subjects",
+					"item": [
+						{
+							"name": "{subject Id}",
+							"item": [
+								{
+									"name": "Get a particular subject",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Subjects/:subjectId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Subjects",
+												":subjectId"
+											],
+											"variable": [
+												{
+													"key": "subjectId",
+													"value": "<uuid>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Subject was not found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Subjects/:subjectId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Subjects",
+														":subjectId"
+													],
+													"variable": [
+														{
+															"key": "subjectId"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"type\": \"nisi\",\n \"title\": \"ea ut pariatur deserunt\",\n \"status\": 63757810,\n \"detail\": \"ut velit ut\",\n \"instance\": \"Ut anim aliqua\"\n}"
+										},
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Subjects/:subjectId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Subjects",
+														":subjectId"
+													],
+													"variable": [
+														{
+															"key": "subjectId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"id\": \"7aeadb78-c318-4f6d-a392-f2cd88b1631c\",\n \"subscriberId\": \"urn:uuid:21719efc-016b-bcd3-8351-48d94bcaa6bf\",\n \"ownerFirstName\": \"consectetur ullamco fugiat officia\",\n \"ownerLastName\": \"cupidatat in\",\n \"ownerEmail\": \"aliqua adipisicing\",\n \"organizationId\": \"urn:uuid:60b78343-f6ab-fbef-5d30-c7dcc68826f3\",\n \"name\": \"Excepteur ea veniam\",\n \"handles\": \"nostrud aliquip\",\n \"handleList\": [\n  {\n   \"platform\": \"amet sit\",\n   \"handle\": \"minim exercitation labore\",\n   \"verified\": false,\n   \"profileUrl\": \"velit ut\",\n   \"profilePicUrl\": \"minim Excepteur dolore\",\n   \"title\": \"fugiat \",\n   \"location\": \"ullamco voluptate\",\n   \"workplace\": \"minim in consectetur ut\",\n   \"school\": \"mollit veniam\",\n   \"livesIn\": \"veniam Excepteur deserunt ip\",\n   \"from\": \"do pariatur nisi deserunt\",\n   \"facebookStatus\": \"id eu quis ipsum\",\n   \"socialMediaLinkedAccount\": \"magna Duis\",\n   \"joined\": \"1977-01-12T21:50:06.608Z\",\n   \"postCount\": 49934101,\n   \"followers\": -34890815,\n   \"following\": 5035732,\n   \"bio\": \"veniam\",\n   \"status\": \"PrivateAccount\"\n  },\n  {\n   \"platform\": \"dolor in\",\n   \"handle\": \"id aliquip\",\n   \"verified\": true,\n   \"profileUrl\": \"fugiat do\",\n   \"profilePicUrl\": \"fugi\",\n   \"title\": \"proident Duis aute deserunt cupidatat\",\n   \"location\": \"aute in\",\n   \"workplace\": \"sint tempor elit aliqua sit\",\n   \"school\": \"fugiat magna occaecat Duis\",\n   \"livesIn\": \"ullamco consequat veniam Ut\",\n   \"from\": \"exercitati\",\n   \"facebookStatus\": \"enim laboris in\",\n   \"socialMediaLinkedAccount\": \"eiusmod reprehenderit\",\n   \"joined\": \"2020-02-05T04:10:43.515Z\",\n   \"postCount\": 49947610,\n   \"followers\": -59969905,\n   \"following\": -57418795,\n   \"bio\": \"enim\",\n   \"status\": \"NoPublicPosts\"\n  }\n ],\n \"mostRecentRunId\": \"urn:uuid:ecfa84e1-35d6-2acc-9a9a-30843663d59b\",\n \"dateAdded\": \"1945-02-02T22:35:23.527Z\",\n \"profilePicUrl\": \"proident enim non\",\n \"lastRunDate\": \"1951-02-07T15:53:07.883Z\",\n \"score\": 93418228,\n \"status\": \"Demo\",\n \"lastRunStatus\": \"RunCompleted\",\n \"lastRunStatusMessage\": \"esse f\",\n \"lastRunFinishedScraping\": \"1986-02-19T13:50:07.090Z\",\n \"currentRunStarted\": \"1945-07-31T07:41:30.327Z\",\n \"currentRunStatus\": \"None\",\n \"currentRunId\": \"0bcd2b77-a980-8403-3862-24341b5a2f3a\",\n \"backgroundReportFileName\": \"nostrud esse et incididunt\",\n \"address\": \"in cillum veniam amet ea\",\n \"city\": \"et fugiat\",\n \"state\": \"consequat dolore in\",\n \"country\": \"officia Ut\",\n \"email\": \"fug\",\n \"highSchool\": \"nisi Excepteur ullamco\",\n \"college\": \"cupidatat commodo quis do incididunt\",\n \"company\": \"culpa\",\n \"phoneNumber\": \"tempor voluptate\",\n \"twitterUrl\": \"ad dolor culpa elit aute\",\n \"facebookUrl\": \"id eu laborum\",\n \"instagramUrl\": \"tempor qui\",\n \"linkedInUrl\": \"ut\",\n \"tags\": [\n  \"magna do adipisicing\",\n  \"pariatur laboris\"\n ],\n \"riskMakeups\": [\n  {\n   \"riskName\": \"sed dolore aliquip consectetur\",\n   \"count\": -97324036\n  },\n  {\n   \"riskName\": \"aliqua deserunt mollit\",\n   \"count\": 77244761\n  }\n ],\n \"channelVolumes\": [\n  {\n   \"channelName\": \"quis ad non dolor\",\n   \"count\": -75058803\n  },\n  {\n   \"channelName\": \"dolor con\",\n   \"count\": 6465825\n  }\n ],\n \"isRedressed\": false,\n \"totalPosts\": 25260916,\n \"flaggedPosts\": -32132036,\n \"totalSentiment\": 16321485.893551916,\n \"webSearchPosts\": -34687673,\n \"hasAvailablePosts\": false,\n \"isBackgroundCheckInProgress\": false,\n \"isCurrentRunTimedOut\": false,\n \"isEnabledForContinuousScreening\": false,\n \"subscriberEnablingContinuousScreening\": \"1cfc9673-8481-9b9d-596d-93f6b46342a3\",\n \"continuousScreeningPreferences\": {\n  \"profile_name\": \"incididunt\",\n  \"risk_categories\": [\n   {\n    \"id\": 35246109,\n    \"name\": \"eiusmod ut cupidatat ullamco\",\n    \"active\": true,\n    \"sort_order\": 77206602,\n    \"risk_type\": \"Image\"\n   },\n   {\n    \"id\": 96429952,\n    \"name\": \"velit ut amet nulla\",\n    \"active\": true,\n    \"sort_order\": 84849957,\n    \"risk_type\": \"Keywords\"\n   }\n  ],\n  \"key_words\": {\n   \"is_active\": true,\n   \"key_words\": [\n    {\n     \"name\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"include_in_search\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"keyword_type\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    },\n    {\n     \"name\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"include_in_search\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"keyword_type\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    }\n   ]\n  },\n  \"general_settings\": {\n   \"email_me\": true,\n   \"notificationEmailAddress\": \"laborum voluptate quis\",\n   \"is_flagged\": true,\n   \"is_negative\": false,\n   \"is_positive\": false,\n   \"hide_logos\": false,\n   \"includeHelpPagesOnBackgroundReport\": false,\n   \"includeHyperlinksInReports\": true,\n   \"include_web_news_posts\": true,\n   \"include_fcra\": true,\n   \"anonymizeProfilePictureInReports\": false,\n   \"includePostInsightsInReports\": false\n  },\n  \"show_archived\": false\n },\n \"continuousScreeningInterval\": \"Daily\",\n \"previousRunDate\": \"1951-08-04T07:56:06.520Z\",\n \"nextScreeningDate\": \"2004-08-30T17:24:23.353Z\",\n \"originalScreeningDate\": \"1945-06-06T03:19:40.446Z\",\n \"isAssignedToFerretlyAnalyst\": true,\n \"ageOrDateOfBirth\": \"ad irure\",\n \"isExternalApiSubject\": false,\n \"externalSystemId\": \"dolor elit in sint\",\n \"partitionKey\": \"cillum in exercitation consequat Lorem\",\n \"rowKey\": \"culpa nulla elit in consectetur\",\n \"timestamp\": \"1960-06-02T16:32:38.933Z\",\n \"eTag\": \"fugiat elit\"\n}"
+										}
+									]
+								},
+								{
+									"name": "Get status of background screen for the requested subject",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Subjects/:subjectId/screeningstatus",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Subjects",
+												":subjectId",
+												"screeningstatus"
+											],
+											"variable": [
+												{
+													"key": "subjectId",
+													"value": "<uuid>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Subjects/:subjectId/screeningstatus",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Subjects",
+														":subjectId",
+														"screeningstatus"
+													],
+													"variable": [
+														{
+															"key": "subjectId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "\"Complete\""
+										}
+									]
+								},
+								{
+									"name": "Get results from most recently-completed background screen for the requested subject",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Subjects/:subjectId/backgroundCheckResults",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Subjects",
+												":subjectId",
+												"backgroundCheckResults"
+											],
+											"variable": [
+												{
+													"key": "subjectId",
+													"value": "<uuid>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Subjects/:subjectId/backgroundCheckResults",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Subjects",
+														":subjectId",
+														"backgroundCheckResults"
+													],
+													"variable": [
+														{
+															"key": "subjectId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"initiated\": \"2012-04-03T21:54:36.668Z\",\n \"subjectId\": \"urn:uuid:dac9f761-5e35-57be-6c67-a49554c2d210\",\n \"subscriberId\": \"urn:uuid:9a333f49-506a-8311-846a-bad86bd60f9b\",\n \"initiatedBy\": \"af162417-d3e9-7cde-9cdf-d1687aded704\",\n \"preferences\": {\n  \"profile_name\": \"aliquip dolore in ad\",\n  \"risk_categories\": [\n   {\n    \"id\": 39037087,\n    \"name\": \"ad anim exercita\",\n    \"active\": false,\n    \"sort_order\": -74420991,\n    \"risk_type\": \"Keywords\"\n   },\n   {\n    \"id\": 55148646,\n    \"name\": \"occaecat tempor amet\",\n    \"active\": true,\n    \"sort_order\": 99969461,\n    \"risk_type\": \"Keywords\"\n   }\n  ],\n  \"key_words\": {\n   \"is_active\": true,\n   \"key_words\": [\n    {\n     \"name\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"include_in_search\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"keyword_type\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    },\n    {\n     \"name\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"include_in_search\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"keyword_type\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    }\n   ]\n  },\n  \"general_settings\": {\n   \"email_me\": false,\n   \"notificationEmailAddress\": \"irure sed tempor\",\n   \"is_flagged\": true,\n   \"is_negative\": true,\n   \"is_positive\": false,\n   \"hide_logos\": false,\n   \"includeHelpPagesOnBackgroundReport\": false,\n   \"includeHyperlinksInReports\": true,\n   \"include_web_news_posts\": true,\n   \"include_fcra\": true,\n   \"anonymizeProfilePictureInReports\": true,\n   \"includePostInsightsInReports\": false\n  },\n  \"show_archived\": false\n },\n \"durableFunctionInstanceId\": \"\",\n \"riskMakeups\": [\n  {\n   \"riskName\": \"culpa minim deserunt Ut sed\",\n   \"count\": 96661239\n  },\n  {\n   \"riskName\": \"deserunt officia Duis magna\",\n   \"count\": 45327428\n  }\n ],\n \"channelVolumes\": [\n  {\n   \"channelName\": \"est\",\n   \"count\": -3907026\n  },\n  {\n   \"channelName\": \"dolor fugiat consectetur Lorem\",\n   \"count\": -55492802\n  }\n ],\n \"flaggedPosts\": 33919780,\n \"score\": -19076318,\n \"totalSentiment\": 55006159.031847805,\n \"continuationOfRunId\": \"urn:uuid:150806d4-ec2a-e1eb-4c5d-de9d500238be\",\n \"isDevTestingBackgroundCheck\": true,\n \"finishedScraping\": \"2006-02-05T16:50:57.075Z\",\n \"runStatus\": \"BackgroundCheckTimedOut\",\n \"previousScoreData\": {\n  \"riskMakeups\": [\n   {\n    \"riskName\": \"in Lorem veniam\",\n    \"count\": 77206347\n   },\n   {\n    \"riskName\": \"Excepteur elit nisi nulla\",\n    \"count\": 19603295\n   }\n  ],\n  \"flaggedPosts\": -82982396,\n  \"score\": -46322003,\n  \"totalSentiment\": 41987062.32907665,\n  \"channelVolumes\": [\n   {\n    \"channelName\": \"in laboris cupidatat ex\",\n    \"count\": -2845468\n   },\n   {\n    \"channelName\": \"laborum anim exercitation\",\n    \"count\": 36718841\n   }\n  ],\n  \"averageSentiment\": 64416961.105796546\n },\n \"isCreditAlreadyRefunded\": true,\n \"partitionKey\": \"Duis culpa sed consequat\",\n \"rowKey\": \"consectetur\",\n \"timestamp\": \"1992-06-13T16:56:16.323Z\",\n \"eTag\": \"minim aliquip do deserunt in\"\n}"
+										}
+									]
+								},
+								{
+									"name": "Initiate a background check for the specified subject",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Subjects/:subjectId/initiateBackgroundCheck",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Subjects",
+												":subjectId",
+												"initiateBackgroundCheck"
+											],
+											"variable": [
+												{
+													"key": "subjectId",
+													"value": "<uuid>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Subject does not exist, is not valid for the API client, already has a background check in progress, or organization does not have enough credits.",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Subjects/:subjectId/initiateBackgroundCheck",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Subjects",
+														":subjectId",
+														"initiateBackgroundCheck"
+													],
+													"variable": [
+														{
+															"key": "subjectId"
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"type\": \"nisi\",\n \"title\": \"ea ut pariatur deserunt\",\n \"status\": 63757810,\n \"detail\": \"ut velit ut\",\n \"instance\": \"Ut anim aliqua\"\n}"
+										},
+										{
+											"name": "Successfully attempted to start background check",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Subjects/:subjectId/initiateBackgroundCheck",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Subjects",
+														":subjectId",
+														"initiateBackgroundCheck"
+													],
+													"variable": [
+														{
+															"key": "subjectId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "\"Complete\""
+										}
+									]
+								},
+								{
+									"name": "Download the latest background report for the requested subject",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Subjects/:subjectId/downloadBackgroundReport",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Subjects",
+												":subjectId",
+												"downloadBackgroundReport"
+											],
+											"variable": [
+												{
+													"key": "subjectId",
+													"value": "<uuid>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Subjects/:subjectId/downloadBackgroundReport",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Subjects",
+														":subjectId",
+														"downloadBackgroundReport"
+													],
+													"variable": [
+														{
+															"key": "subjectId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"fileContents\": \"eiusmod magna\",\n \"contentType\": \"in\",\n \"fileDownloadName\": \"sed Duis nisi\",\n \"lastModified\": \"2013-12-26T12:21:21.491Z\",\n \"entityTag\": {\n  \"tag\": {\n   \"buffer\": \"dolore incididunt pariatur consequat nisi\",\n   \"offset\": -64234775,\n   \"length\": -9735852,\n   \"value\": \"ut\",\n   \"hasValue\": false\n  },\n  \"isWeak\": false\n },\n \"enableRangeProcessing\": false\n}"
+										},
+										{
+											"name": "The subject has a current background report, but it could not be located in Blob Storage",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Subjects/:subjectId/downloadBackgroundReport",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Subjects",
+														":subjectId",
+														"downloadBackgroundReport"
+													],
+													"variable": [
+														{
+															"key": "subjectId"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"type\": \"nisi\",\n \"title\": \"ea ut pariatur deserunt\",\n \"status\": 63757810,\n \"detail\": \"ut velit ut\",\n \"instance\": \"Ut anim aliqua\"\n}"
+										},
+										{
+											"name": "The subject does not have a current background report",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Subjects/:subjectId/downloadBackgroundReport",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Subjects",
+														":subjectId",
+														"downloadBackgroundReport"
+													],
+													"variable": [
+														{
+															"key": "subjectId"
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"type\": \"nisi\",\n \"title\": \"ea ut pariatur deserunt\",\n \"status\": 63757810,\n \"detail\": \"ut velit ut\",\n \"instance\": \"Ut anim aliqua\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "get By External Id/{external Id}",
+							"item": [
+								{
+									"name": "Get a particular subject by external id value",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Subjects/getByExternalId/:externalId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Subjects",
+												"getByExternalId",
+												":externalId"
+											],
+											"variable": [
+												{
+													"key": "externalId",
+													"value": "<string>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "If there are multiple subjects having the specified externalId value, the \"first\" will be returned"
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Subjects/getByExternalId/:externalId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Subjects",
+														"getByExternalId",
+														":externalId"
+													],
+													"variable": [
+														{
+															"key": "externalId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"id\": \"7aeadb78-c318-4f6d-a392-f2cd88b1631c\",\n \"subscriberId\": \"urn:uuid:21719efc-016b-bcd3-8351-48d94bcaa6bf\",\n \"ownerFirstName\": \"consectetur ullamco fugiat officia\",\n \"ownerLastName\": \"cupidatat in\",\n \"ownerEmail\": \"aliqua adipisicing\",\n \"organizationId\": \"urn:uuid:60b78343-f6ab-fbef-5d30-c7dcc68826f3\",\n \"name\": \"Excepteur ea veniam\",\n \"handles\": \"nostrud aliquip\",\n \"handleList\": [\n  {\n   \"platform\": \"amet sit\",\n   \"handle\": \"minim exercitation labore\",\n   \"verified\": false,\n   \"profileUrl\": \"velit ut\",\n   \"profilePicUrl\": \"minim Excepteur dolore\",\n   \"title\": \"fugiat \",\n   \"location\": \"ullamco voluptate\",\n   \"workplace\": \"minim in consectetur ut\",\n   \"school\": \"mollit veniam\",\n   \"livesIn\": \"veniam Excepteur deserunt ip\",\n   \"from\": \"do pariatur nisi deserunt\",\n   \"facebookStatus\": \"id eu quis ipsum\",\n   \"socialMediaLinkedAccount\": \"magna Duis\",\n   \"joined\": \"1977-01-12T21:50:06.608Z\",\n   \"postCount\": 49934101,\n   \"followers\": -34890815,\n   \"following\": 5035732,\n   \"bio\": \"veniam\",\n   \"status\": \"PrivateAccount\"\n  },\n  {\n   \"platform\": \"dolor in\",\n   \"handle\": \"id aliquip\",\n   \"verified\": true,\n   \"profileUrl\": \"fugiat do\",\n   \"profilePicUrl\": \"fugi\",\n   \"title\": \"proident Duis aute deserunt cupidatat\",\n   \"location\": \"aute in\",\n   \"workplace\": \"sint tempor elit aliqua sit\",\n   \"school\": \"fugiat magna occaecat Duis\",\n   \"livesIn\": \"ullamco consequat veniam Ut\",\n   \"from\": \"exercitati\",\n   \"facebookStatus\": \"enim laboris in\",\n   \"socialMediaLinkedAccount\": \"eiusmod reprehenderit\",\n   \"joined\": \"2020-02-05T04:10:43.515Z\",\n   \"postCount\": 49947610,\n   \"followers\": -59969905,\n   \"following\": -57418795,\n   \"bio\": \"enim\",\n   \"status\": \"NoPublicPosts\"\n  }\n ],\n \"mostRecentRunId\": \"urn:uuid:ecfa84e1-35d6-2acc-9a9a-30843663d59b\",\n \"dateAdded\": \"1945-02-02T22:35:23.527Z\",\n \"profilePicUrl\": \"proident enim non\",\n \"lastRunDate\": \"1951-02-07T15:53:07.883Z\",\n \"score\": 93418228,\n \"status\": \"Demo\",\n \"lastRunStatus\": \"RunCompleted\",\n \"lastRunStatusMessage\": \"esse f\",\n \"lastRunFinishedScraping\": \"1986-02-19T13:50:07.090Z\",\n \"currentRunStarted\": \"1945-07-31T07:41:30.327Z\",\n \"currentRunStatus\": \"None\",\n \"currentRunId\": \"0bcd2b77-a980-8403-3862-24341b5a2f3a\",\n \"backgroundReportFileName\": \"nostrud esse et incididunt\",\n \"address\": \"in cillum veniam amet ea\",\n \"city\": \"et fugiat\",\n \"state\": \"consequat dolore in\",\n \"country\": \"officia Ut\",\n \"email\": \"fug\",\n \"highSchool\": \"nisi Excepteur ullamco\",\n \"college\": \"cupidatat commodo quis do incididunt\",\n \"company\": \"culpa\",\n \"phoneNumber\": \"tempor voluptate\",\n \"twitterUrl\": \"ad dolor culpa elit aute\",\n \"facebookUrl\": \"id eu laborum\",\n \"instagramUrl\": \"tempor qui\",\n \"linkedInUrl\": \"ut\",\n \"tags\": [\n  \"magna do adipisicing\",\n  \"pariatur laboris\"\n ],\n \"riskMakeups\": [\n  {\n   \"riskName\": \"sed dolore aliquip consectetur\",\n   \"count\": -97324036\n  },\n  {\n   \"riskName\": \"aliqua deserunt mollit\",\n   \"count\": 77244761\n  }\n ],\n \"channelVolumes\": [\n  {\n   \"channelName\": \"quis ad non dolor\",\n   \"count\": -75058803\n  },\n  {\n   \"channelName\": \"dolor con\",\n   \"count\": 6465825\n  }\n ],\n \"isRedressed\": false,\n \"totalPosts\": 25260916,\n \"flaggedPosts\": -32132036,\n \"totalSentiment\": 16321485.893551916,\n \"webSearchPosts\": -34687673,\n \"hasAvailablePosts\": false,\n \"isBackgroundCheckInProgress\": false,\n \"isCurrentRunTimedOut\": false,\n \"isEnabledForContinuousScreening\": false,\n \"subscriberEnablingContinuousScreening\": \"1cfc9673-8481-9b9d-596d-93f6b46342a3\",\n \"continuousScreeningPreferences\": {\n  \"profile_name\": \"incididunt\",\n  \"risk_categories\": [\n   {\n    \"id\": 35246109,\n    \"name\": \"eiusmod ut cupidatat ullamco\",\n    \"active\": true,\n    \"sort_order\": 77206602,\n    \"risk_type\": \"Image\"\n   },\n   {\n    \"id\": 96429952,\n    \"name\": \"velit ut amet nulla\",\n    \"active\": true,\n    \"sort_order\": 84849957,\n    \"risk_type\": \"Keywords\"\n   }\n  ],\n  \"key_words\": {\n   \"is_active\": true,\n   \"key_words\": [\n    {\n     \"name\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"include_in_search\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"keyword_type\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    },\n    {\n     \"name\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"include_in_search\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"keyword_type\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    }\n   ]\n  },\n  \"general_settings\": {\n   \"email_me\": true,\n   \"notificationEmailAddress\": \"laborum voluptate quis\",\n   \"is_flagged\": true,\n   \"is_negative\": false,\n   \"is_positive\": false,\n   \"hide_logos\": false,\n   \"includeHelpPagesOnBackgroundReport\": false,\n   \"includeHyperlinksInReports\": true,\n   \"include_web_news_posts\": true,\n   \"include_fcra\": true,\n   \"anonymizeProfilePictureInReports\": false,\n   \"includePostInsightsInReports\": false\n  },\n  \"show_archived\": false\n },\n \"continuousScreeningInterval\": \"Daily\",\n \"previousRunDate\": \"1951-08-04T07:56:06.520Z\",\n \"nextScreeningDate\": \"2004-08-30T17:24:23.353Z\",\n \"originalScreeningDate\": \"1945-06-06T03:19:40.446Z\",\n \"isAssignedToFerretlyAnalyst\": true,\n \"ageOrDateOfBirth\": \"ad irure\",\n \"isExternalApiSubject\": false,\n \"externalSystemId\": \"dolor elit in sint\",\n \"partitionKey\": \"cillum in exercitation consequat Lorem\",\n \"rowKey\": \"culpa nulla elit in consectetur\",\n \"timestamp\": \"1960-06-02T16:32:38.933Z\",\n \"eTag\": \"fugiat elit\"\n}"
+										},
+										{
+											"name": "Subject was not found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Subjects/getByExternalId/:externalId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Subjects",
+														"getByExternalId",
+														":externalId"
+													],
+													"variable": [
+														{
+															"key": "externalId"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"type\": \"nisi\",\n \"title\": \"ea ut pariatur deserunt\",\n \"status\": 63757810,\n \"detail\": \"ut velit ut\",\n \"instance\": \"Ut anim aliqua\"\n}"
+										}
+									]
+								},
+								{
+									"name": "Get results from most recently-completed background screen for the requested subject",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Subjects/getByExternalId/:externalId/backgroundCheckResults",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Subjects",
+												"getByExternalId",
+												":externalId",
+												"backgroundCheckResults"
+											],
+											"variable": [
+												{
+													"key": "externalId",
+													"value": "<string>",
+													"type": "string",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Subjects/getByExternalId/:externalId/backgroundCheckResults",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Subjects",
+														"getByExternalId",
+														":externalId",
+														"backgroundCheckResults"
+													],
+													"variable": [
+														{
+															"key": "externalId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"initiated\": \"1979-09-11T10:29:59.167Z\",\n \"subjectId\": \"fe574f97-1711-b75c-fdc0-0ecbe50f59bf\",\n \"subscriberId\": \"urn:uuid:a3283fac-8dc7-9143-ee1b-2f9984561d06\",\n \"initiatedBy\": \"urn:uuid:490ed1c7-0823-06e9-4145-fcbc946f8a2f\",\n \"preferences\": {\n  \"profile_name\": \"ad do ullamco\",\n  \"risk_categories\": [\n   {\n    \"id\": 21514091,\n    \"name\": \"Lorem consequat eu cupidatat velit\",\n    \"active\": false,\n    \"sort_order\": 28788531,\n    \"risk_type\": \"Image\"\n   },\n   {\n    \"id\": -13209654,\n    \"name\": \"ullamco\",\n    \"active\": true,\n    \"sort_order\": -74746749,\n    \"risk_type\": \"Keywords\"\n   }\n  ],\n  \"key_words\": {\n   \"is_active\": true,\n   \"key_words\": [\n    {\n     \"name\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"include_in_search\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"keyword_type\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    },\n    {\n     \"name\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"include_in_search\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"keyword_type\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    }\n   ]\n  },\n  \"general_settings\": {\n   \"email_me\": false,\n   \"notificationEmailAddress\": \"elit laborum\",\n   \"is_flagged\": true,\n   \"is_negative\": false,\n   \"is_positive\": false,\n   \"hide_logos\": false,\n   \"includeHelpPagesOnBackgroundReport\": true,\n   \"includeHyperlinksInReports\": false,\n   \"include_web_news_posts\": true,\n   \"include_fcra\": false,\n   \"anonymizeProfilePictureInReports\": false,\n   \"includePostInsightsInReports\": false\n  },\n  \"show_archived\": true\n },\n \"durableFunctionInstanceId\": \"aliqua eiusmod adipisicing\",\n \"riskMakeups\": [\n  {\n   \"riskName\": \"adipisicing\",\n   \"count\": 6691536\n  },\n  {\n   \"riskName\": \"sint aliquip\",\n   \"count\": 46194819\n  }\n ],\n \"channelVolumes\": [\n  {\n   \"channelName\": \"exercitation\",\n   \"count\": 48262066\n  },\n  {\n   \"channelName\": \"id sit eiusmod dolore\",\n   \"count\": 8229551\n  }\n ],\n \"flaggedPosts\": -85945462,\n \"score\": -39837853,\n \"totalSentiment\": 910482.0137618482,\n \"continuationOfRunId\": \"cd91e43b-1b9d-8b89-1feb-337a63797023\",\n \"isDevTestingBackgroundCheck\": false,\n \"finishedScraping\": \"1978-09-07T13:44:22.859Z\",\n \"runStatus\": \"SubjectHasNoPosts\",\n \"previousScoreData\": {\n  \"riskMakeups\": [\n   {\n    \"riskName\": \"ad pariatur eu in\",\n    \"count\": -8006467\n   },\n   {\n    \"riskName\": \"eiusmod sint\",\n    \"count\": 83194141\n   }\n  ],\n  \"flaggedPosts\": 93338963,\n  \"score\": 44694846,\n  \"totalSentiment\": -43350286.829341166,\n  \"channelVolumes\": [\n   {\n    \"channelName\": \"elit laboris ex nulla qui\",\n    \"count\": -46806370\n   },\n   {\n    \"channelName\": \"in\",\n    \"count\": -49374926\n   }\n  ],\n  \"averageSentiment\": 69564704.22287619\n },\n \"isCreditAlreadyRefunded\": true,\n \"partitionKey\": \"ipsum velit esse dolore\",\n \"rowKey\": \"sint veniam sunt mollit\",\n \"timestamp\": \"1986-12-07T01:26:30.177Z\",\n \"eTag\": \"fugiat tempor esse\"\n}"
+										},
+										{
+											"name": "Subject was not found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Subjects/getByExternalId/:externalId/backgroundCheckResults",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Subjects",
+														"getByExternalId",
+														":externalId",
+														"backgroundCheckResults"
+													],
+													"variable": [
+														{
+															"key": "externalId"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n \"type\": \"nisi\",\n \"title\": \"ea ut pariatur deserunt\",\n \"status\": 63757810,\n \"detail\": \"ut velit ut\",\n \"instance\": \"Ut anim aliqua\"\n}"
+										},
+										{
+											"name": "Something was invalid about the request: subject does not have a completed background check; subject currently has background check in-progress",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Subjects/getByExternalId/:externalId/backgroundCheckResults",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Subjects",
+														"getByExternalId",
+														":externalId",
+														"backgroundCheckResults"
+													],
+													"variable": [
+														{
+															"key": "externalId"
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "\"nostrud qui in\""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Get a list of all of the subscriber's subjects",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Subjects",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Subjects"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Subjects",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Subjects"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n {\n  \"id\": \"0c0abd38-d322-053b-b101-3e8a234c6e74\",\n  \"subscriberId\": \"1fbba80a-abb9-a24a-f637-33dc011b1426\",\n  \"ownerFirstName\": \"in commodo ut proident\",\n  \"ownerLastName\": \"mollit dolor\",\n  \"ownerEmail\": \"qui\",\n  \"organizationId\": \"8f2c5ac5-4a7d-06be-67f7-4eac5632eb8e\",\n  \"name\": \"aute\",\n  \"handles\": \"adipisici\",\n  \"handleList\": [\n   {\n    \"platform\": \"Excepteur\",\n    \"handle\": \"aliqua enim esse minim incididunt\",\n    \"verified\": false,\n    \"profileUrl\": \"in\",\n    \"profilePicUrl\": \"veniam dolor\",\n    \"title\": \"velit nostrud ipsum proident\",\n    \"location\": \"voluptate veniam nisi\",\n    \"workplace\": \"magna ad ullamco voluptate\",\n    \"school\": \"officia cillum eu ipsum\",\n    \"livesIn\": \"elit exercitation consequat\",\n    \"from\": \"eiusmod magna in\",\n    \"facebookStatus\": \"sed enim\",\n    \"socialMediaLinkedAccount\": \"elit est aliquip\",\n    \"joined\": \"1992-05-17T12:39:57.292Z\",\n    \"postCount\": 36984675,\n    \"followers\": 46526761,\n    \"following\": 93954274,\n    \"bio\": \"sit id eiusmod velit\",\n    \"status\": \"NoPublicPosts\"\n   },\n   {\n    \"platform\": \"sint tempor consequat\",\n    \"handle\": \"Excepteur tempor deserunt\",\n    \"verified\": false,\n    \"profileUrl\": \"Duis aute aliquip\",\n    \"profilePicUrl\": \"nostrud reprehenderit\",\n    \"title\": \"ea magna labore\",\n    \"location\": \"proident ullamco consectetu\",\n    \"workplace\": \"mollit dolore commodo anim\",\n    \"school\": \"incididu\",\n    \"livesIn\": \"deserunt dolore in officia\",\n    \"from\": \"nulla velit ipsum\",\n    \"facebookStatus\": \"enim consequat\",\n    \"socialMediaLinkedAccount\": \"ea magna\",\n    \"joined\": \"1960-05-01T02:12:21.363Z\",\n    \"postCount\": -78699239,\n    \"followers\": -33923657,\n    \"following\": 10571642,\n    \"bio\": \"ex dolore\",\n    \"status\": \"Valid\"\n   }\n  ],\n  \"mostRecentRunId\": \"urn:uuid:ec598f78-cf1a-07ac-7309-08ef4ba95ffc\",\n  \"dateAdded\": \"1988-08-21T02:35:08.559Z\",\n  \"profilePicUrl\": \"nulla dolore consequat\",\n  \"lastRunDate\": \"1967-02-06T03:26:31.436Z\",\n  \"score\": -49549635,\n  \"status\": \"Active\",\n  \"lastRunStatus\": \"PostClassificationComplete\",\n  \"lastRunStatusMessage\": \"dolore cillum id\",\n  \"lastRunFinishedScraping\": \"1983-02-26T14:27:43.242Z\",\n  \"currentRunStarted\": \"1974-09-16T21:30:44.350Z\",\n  \"currentRunStatus\": \"ScrapingComplete\",\n  \"currentRunId\": \"4805107e-f07d-277c-343b-b69f256331ab\",\n  \"backgroundReportFileName\": \"do fugiat eu incididunt sed\",\n  \"address\": \"ulla\",\n  \"city\": \"eu Excepteur do proident esse\",\n  \"state\": \"mollit ipsum\",\n  \"country\": \"in ad\",\n  \"email\": \"culpa ipsum incididunt ad Lorem\",\n  \"highSchool\": \"pariatur sunt dolor\",\n  \"college\": \"reprehenderit ut\",\n  \"company\": \"sint laborum eu\",\n  \"phoneNumber\": \"et veniam \",\n  \"twitterUrl\": \"irure Duis veniam dolor\",\n  \"facebookUrl\": \"veniam enim ipsum\",\n  \"instagramUrl\": \"eu laboris tempor est\",\n  \"linkedInUrl\": \"commodo\",\n  \"tags\": [\n   \"consectetur ea consequat irure\",\n   \"exercit\"\n  ],\n  \"riskMakeups\": [\n   {\n    \"riskName\": \"ipsum commodo\",\n    \"count\": 94642651\n   },\n   {\n    \"riskName\": \"occaec\",\n    \"count\": 1120236\n   }\n  ],\n  \"channelVolumes\": [\n   {\n    \"channelName\": \"incididunt\",\n    \"count\": 90467138\n   },\n   {\n    \"channelName\": \"laborum consectetur in\",\n    \"count\": -88700803\n   }\n  ],\n  \"isRedressed\": false,\n  \"totalPosts\": -58422286,\n  \"flaggedPosts\": 97601884,\n  \"totalSentiment\": 88111010.74392113,\n  \"webSearchPosts\": -66986328,\n  \"hasAvailablePosts\": true,\n  \"isBackgroundCheckInProgress\": false,\n  \"isCurrentRunTimedOut\": false,\n  \"isEnabledForContinuousScreening\": false,\n  \"subscriberEnablingContinuousScreening\": \"urn:uuid:b1bdceae-9dee-057c-ce30-ca31b5091723\",\n  \"continuousScreeningPreferences\": {\n   \"profile_name\": \"qui proident Lo\",\n   \"risk_categories\": [\n    {\n     \"id\": 95936522,\n     \"name\": \"ullamco ut\",\n     \"active\": false,\n     \"sort_order\": 87125560,\n     \"risk_type\": \"Keywords\"\n    },\n    {\n     \"id\": -63229350,\n     \"name\": \"mollit esse et\",\n     \"active\": false,\n     \"sort_order\": 17630808,\n     \"risk_type\": \"Post\"\n    }\n   ],\n   \"key_words\": {\n    \"is_active\": false,\n    \"key_words\": [\n     {\n      \"name\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"include_in_search\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"keyword_type\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     },\n     {\n      \"name\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"include_in_search\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"keyword_type\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    ]\n   },\n   \"general_settings\": {\n    \"email_me\": false,\n    \"notificationEmailAddress\": \"incididunt pariatur est ex\",\n    \"is_flagged\": true,\n    \"is_negative\": false,\n    \"is_positive\": true,\n    \"hide_logos\": false,\n    \"includeHelpPagesOnBackgroundReport\": true,\n    \"includeHyperlinksInReports\": false,\n    \"include_web_news_posts\": true,\n    \"include_fcra\": true,\n    \"anonymizeProfilePictureInReports\": false,\n    \"includePostInsightsInReports\": true\n   },\n   \"show_archived\": false\n  },\n  \"continuousScreeningInterval\": \"SemiAnnual\",\n  \"previousRunDate\": \"1980-01-09T05:33:33.769Z\",\n  \"nextScreeningDate\": \"2008-09-27T19:35:28.959Z\",\n  \"originalScreeningDate\": \"2003-05-17T15:04:33.635Z\",\n  \"isAssignedToFerretlyAnalyst\": false,\n  \"ageOrDateOfBirth\": \"ea incididunt\",\n  \"isExternalApiSubject\": true,\n  \"externalSystemId\": \"tempor occaeca\",\n  \"partitionKey\": \"laborum cupidatat aliqua\",\n  \"rowKey\": \"officia commodo Lorem exercitation ut\",\n  \"timestamp\": \"1987-09-28T12:16:52.293Z\",\n  \"eTag\": \"dolore minim\"\n },\n {\n  \"id\": \"urn:uuid:c8ca0bc4-b295-de5e-a5be-e6d0f9084dec\",\n  \"subscriberId\": \"urn:uuid:9904d0af-6080-a85a-ac30-9bad5ed239db\",\n  \"ownerFirstName\": \"non veniam mollit\",\n  \"ownerLastName\": \"reprehenderit eiusmod p\",\n  \"ownerEmail\": \"la\",\n  \"organizationId\": \"urn:uuid:769e8ecc-eddf-3cd1-a03a-f11af0510024\",\n  \"name\": \"cillum nostrud\",\n  \"handles\": \"ut dolore\",\n  \"handleList\": [\n   {\n    \"platform\": \"consectetur id\",\n    \"handle\": \"consectetur ullamco\",\n    \"verified\": false,\n    \"profileUrl\": \"ad in\",\n    \"profilePicUrl\": \"ea incididunt enim\",\n    \"title\": \"id est ea cul\",\n    \"location\": \"deserunt e\",\n    \"workplace\": \"proident fugiat anim\",\n    \"school\": \"consequat pariatur\",\n    \"livesIn\": \"Excepteu\",\n    \"from\": \"nulla in amet nostrud aliquip\",\n    \"facebookStatus\": \"fugiat sit nostrud\",\n    \"socialMediaLinkedAccount\": \"elit occaecat dolor\",\n    \"joined\": \"1971-07-12T16:21:27.214Z\",\n    \"postCount\": 21317334,\n    \"followers\": 31690265,\n    \"following\": 89066735,\n    \"bio\": \"reprehenderit minim\",\n    \"status\": \"PrivateAccount\"\n   },\n   {\n    \"platform\": \"in quis proident anim dolore\",\n    \"handle\": \"aliquip ad cillum velit anim\",\n    \"verified\": true,\n    \"profileUrl\": \"incididunt nisi\",\n    \"profilePicUrl\": \"magna pariatur veniam tempor\",\n    \"title\": \"et quis in\",\n    \"location\": \"nostrud\",\n    \"workplace\": \"dolor\",\n    \"school\": \"commodo tempor\",\n    \"livesIn\": \"dolore\",\n    \"from\": \"sit Duis\",\n    \"facebookStatus\": \"veniam aute do irure sed\",\n    \"socialMediaLinkedAccount\": \"occaec\",\n    \"joined\": \"2001-03-11T03:34:22.538Z\",\n    \"postCount\": -89067398,\n    \"followers\": -15129463,\n    \"following\": -18902625,\n    \"bio\": \"labore sit adipisicing qui\",\n    \"status\": \"Valid\"\n   }\n  ],\n  \"mostRecentRunId\": \"urn:uuid:7667af02-7f83-49cf-8322-00d6f1afb315\",\n  \"dateAdded\": \"1975-04-30T07:22:21.866Z\",\n  \"profilePicUrl\": \"ut Lorem\",\n  \"lastRunDate\": \"1944-07-13T12:45:57.823Z\",\n  \"score\": -67300133,\n  \"status\": \"Archived\",\n  \"lastRunStatus\": \"SubjectHasNoPosts\",\n  \"lastRunStatusMessage\": \"in\",\n  \"lastRunFinishedScraping\": \"1959-01-27T18:39:42.432Z\",\n  \"currentRunStarted\": \"1948-12-13T16:43:37.894Z\",\n  \"currentRunStatus\": \"ScraperFinished\",\n  \"currentRunId\": \"168ac51d-4c7e-9459-9d67-66fcc39d402e\",\n  \"backgroundReportFileName\": \"fugiat commodo ut\",\n  \"address\": \"irure ea nisi nostrud sint\",\n  \"city\": \"ut consequat\",\n  \"state\": \"minim laborum ut incididunt\",\n  \"country\": \"esse amet Lorem veniam ullamco\",\n  \"email\": \"qui reprehenderit tem\",\n  \"highSchool\": \"eu esse magna enim do\",\n  \"college\": \"eiusmod se\",\n  \"company\": \"est magna\",\n  \"phoneNumber\": \"laboris reprehenderit id aute labore\",\n  \"twitterUrl\": \"dolore occaecat tempor veniam\",\n  \"facebookUrl\": \"Duis Ut\",\n  \"instagramUrl\": \"aliquip sit\",\n  \"linkedInUrl\": \"ea dolor sit\",\n  \"tags\": [\n   \"Du\",\n   \"cillum minim magna\"\n  ],\n  \"riskMakeups\": [\n   {\n    \"riskName\": \"Lorem pariatur laborum enim\",\n    \"count\": -87478597\n   },\n   {\n    \"riskName\": \"cillum laborum\",\n    \"count\": 36665070\n   }\n  ],\n  \"channelVolumes\": [\n   {\n    \"channelName\": \"aliqua in nisi\",\n    \"count\": -78202483\n   },\n   {\n    \"channelName\": \"velit\",\n    \"count\": -16929708\n   }\n  ],\n  \"isRedressed\": true,\n  \"totalPosts\": 57140929,\n  \"flaggedPosts\": 90374018,\n  \"totalSentiment\": -66348427.90415347,\n  \"webSearchPosts\": -12159352,\n  \"hasAvailablePosts\": true,\n  \"isBackgroundCheckInProgress\": false,\n  \"isCurrentRunTimedOut\": true,\n  \"isEnabledForContinuousScreening\": false,\n  \"subscriberEnablingContinuousScreening\": \"9004718e-98f0-0ce4-c617-27258cc5feb0\",\n  \"continuousScreeningPreferences\": {\n   \"profile_name\": \"ut deserunt adipisicing\",\n   \"risk_categories\": [\n    {\n     \"id\": 37019375,\n     \"name\": \"cupidatat nisi \",\n     \"active\": true,\n     \"sort_order\": -38093145,\n     \"risk_type\": \"Post\"\n    },\n    {\n     \"id\": 63116896,\n     \"name\": \"consectetur E\",\n     \"active\": true,\n     \"sort_order\": 89015218,\n     \"risk_type\": \"Keywords\"\n    }\n   ],\n   \"key_words\": {\n    \"is_active\": true,\n    \"key_words\": [\n     {\n      \"name\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"include_in_search\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"keyword_type\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     },\n     {\n      \"name\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"include_in_search\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      },\n      \"keyword_type\": {\n       \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n      }\n     }\n    ]\n   },\n   \"general_settings\": {\n    \"email_me\": true,\n    \"notificationEmailAddress\": \"in Lorem nostrud\",\n    \"is_flagged\": false,\n    \"is_negative\": false,\n    \"is_positive\": false,\n    \"hide_logos\": true,\n    \"includeHelpPagesOnBackgroundReport\": true,\n    \"includeHyperlinksInReports\": false,\n    \"include_web_news_posts\": true,\n    \"include_fcra\": true,\n    \"anonymizeProfilePictureInReports\": true,\n    \"includePostInsightsInReports\": false\n   },\n   \"show_archived\": false\n  },\n  \"continuousScreeningInterval\": \"Monthly\",\n  \"previousRunDate\": \"1991-04-28T15:08:16.520Z\",\n  \"nextScreeningDate\": \"1956-08-05T22:08:41.683Z\",\n  \"originalScreeningDate\": \"1978-09-18T07:19:15.997Z\",\n  \"isAssignedToFerretlyAnalyst\": true,\n  \"ageOrDateOfBirth\": \"culpa nostrud\",\n  \"isExternalApiSubject\": false,\n  \"externalSystemId\": \"nulla adipisicing\",\n  \"partitionKey\": \"nulla a\",\n  \"rowKey\": \"culpa dolore fugiat\",\n  \"timestamp\": \"2019-09-18T17:09:09.383Z\",\n  \"eTag\": \"est tempor ea qui\"\n }\n]"
+								}
+							]
+						},
+						{
+							"name": "Create a new subject",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"subjectData\": {\n        \"name\": \"<string>\",\n        \"profilePicUrl\": \"<string>\",\n        \"address\": \"<string>\",\n        \"city\": \"<string>\",\n        \"state\": \"<string>\",\n        \"email\": \"<string>\",\n        \"highSchool\": \"<string>\",\n        \"college\": \"<string>\",\n        \"company\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"twitterUrl\": \"<string>\",\n        \"facebookUrl\": \"<string>\",\n        \"instagramUrl\": \"<string>\",\n        \"linkedInUrl\": \"<string>\",\n        \"tags\": [\n            \"<string>\",\n            \"<string>\"\n        ],\n        \"country\": \"<string>\",\n        \"ageOrDateOfBirth\": \"<string>\"\n    },\n    \"handles\": [\n        {\n            \"platform\": \"eiusmod\",\n            \"handle\": \"nostrud in\",\n            \"verified\": false,\n            \"profileUrl\": \"dolore magna\",\n            \"profilePicUrl\": \"et nostrud eiusmod esse ut\",\n            \"title\": \"tempor\",\n            \"location\": \"sed in ipsum\",\n            \"workplace\": \"dolore\",\n            \"school\": \"irure\",\n            \"livesIn\": \"nisi\",\n            \"from\": \"in Ut esse\",\n            \"facebookStatus\": \"velit reprehenderit\",\n            \"socialMediaLinkedAccount\": \"laboris dolore reprehenderit\",\n            \"joined\": \"1987-11-14T22:18:59.567Z\",\n            \"postCount\": 75415506,\n            \"followers\": -3315690,\n            \"following\": 83306499,\n            \"bio\": \"ullamco nostrud Ut Lorem\",\n            \"status\": \"PrivateAccount\"\n        },\n        {\n            \"platform\": \"consequat cillum\",\n            \"handle\": \"ni\",\n            \"verified\": true,\n            \"profileUrl\": \"dolor tempor eu laborum in\",\n            \"profilePicUrl\": \"labore culpa\",\n            \"title\": \"qui\",\n            \"location\": \"in Duis Lorem s\",\n            \"workplace\": \"dolor nulla s\",\n            \"school\": \"pariatur tempor sint minim\",\n            \"livesIn\": \"ullamco mollit\",\n            \"from\": \"esse minim ullamco sed\",\n            \"facebookStatus\": \"irure in nisi\",\n            \"socialMediaLinkedAccount\": \"amet sint irure Ut\",\n            \"joined\": \"1972-06-22T19:34:48.086Z\",\n            \"postCount\": -38941791,\n            \"followers\": 64028872,\n            \"following\": -93574941,\n            \"bio\": \"in esse\",\n            \"status\": \"PrivateAccount\"\n        }\n    ],\n    \"assignToFerretlyAnalyst\": \"<boolean>\",\n    \"externalSystemId\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Subjects",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Subjects"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"subjectData\": {\n        \"name\": \"<string>\",\n        \"profilePicUrl\": \"<string>\",\n        \"address\": \"<string>\",\n        \"city\": \"<string>\",\n        \"state\": \"<string>\",\n        \"email\": \"<string>\",\n        \"highSchool\": \"<string>\",\n        \"college\": \"<string>\",\n        \"company\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"twitterUrl\": \"<string>\",\n        \"facebookUrl\": \"<string>\",\n        \"instagramUrl\": \"<string>\",\n        \"linkedInUrl\": \"<string>\",\n        \"tags\": [\n            \"<string>\",\n            \"<string>\"\n        ],\n        \"country\": \"<string>\",\n        \"ageOrDateOfBirth\": \"<string>\"\n    },\n    \"handles\": [\n        {\n            \"platform\": \"aliqua est culpa\",\n            \"handle\": \"ad non ullamco\",\n            \"verified\": false,\n            \"profileUrl\": \"velit sed\",\n            \"profilePicUrl\": \"\",\n            \"title\": \"sint quis ut est Ut\",\n            \"location\": \"aute laboris aliqua exercitation\",\n            \"workplace\": \"Duis\",\n            \"school\": \"repreh\",\n            \"livesIn\": \"dolor tempor irure eu\",\n            \"from\": \"E\",\n            \"facebookStatus\": \"eu\",\n            \"socialMediaLinkedAccount\": \"laboris\",\n            \"joined\": \"1990-07-19T21:15:45.204Z\",\n            \"postCount\": 58639760,\n            \"followers\": 77288410,\n            \"following\": -4206937,\n            \"bio\": \"ut sunt culpa\",\n            \"status\": \"Valid\"\n        },\n        {\n            \"platform\": \"dolore aliqua cupida\",\n            \"handle\": \"tempor commodo adipisicing\",\n            \"verified\": false,\n            \"profileUrl\": \"pariatur Lorem\",\n            \"profilePicUrl\": \"enim aliqua esse\",\n            \"title\": \"dolor officia sit nisi\",\n            \"location\": \"elit sint\",\n            \"workplace\": \"tempor ea commodo dolor\",\n            \"school\": \"sunt quis occaecat\",\n            \"livesIn\": \"aliquip ea irure\",\n            \"from\": \"sit\",\n            \"facebookStatus\": \"ipsum Duis\",\n            \"socialMediaLinkedAccount\": \"est aliqua\",\n            \"joined\": \"1977-06-06T15:46:06.601Z\",\n            \"postCount\": -57828151,\n            \"followers\": 5711157,\n            \"following\": -48343020,\n            \"bio\": \"culpa ea\",\n            \"status\": \"NoPublicPosts\"\n        }\n    ],\n    \"assignToFerretlyAnalyst\": \"<boolean>\",\n    \"externalSystemId\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Subjects",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Subjects"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"id\": \"7aeadb78-c318-4f6d-a392-f2cd88b1631c\",\n \"subscriberId\": \"urn:uuid:21719efc-016b-bcd3-8351-48d94bcaa6bf\",\n \"ownerFirstName\": \"consectetur ullamco fugiat officia\",\n \"ownerLastName\": \"cupidatat in\",\n \"ownerEmail\": \"aliqua adipisicing\",\n \"organizationId\": \"urn:uuid:60b78343-f6ab-fbef-5d30-c7dcc68826f3\",\n \"name\": \"Excepteur ea veniam\",\n \"handles\": \"nostrud aliquip\",\n \"handleList\": [\n  {\n   \"platform\": \"amet sit\",\n   \"handle\": \"minim exercitation labore\",\n   \"verified\": false,\n   \"profileUrl\": \"velit ut\",\n   \"profilePicUrl\": \"minim Excepteur dolore\",\n   \"title\": \"fugiat \",\n   \"location\": \"ullamco voluptate\",\n   \"workplace\": \"minim in consectetur ut\",\n   \"school\": \"mollit veniam\",\n   \"livesIn\": \"veniam Excepteur deserunt ip\",\n   \"from\": \"do pariatur nisi deserunt\",\n   \"facebookStatus\": \"id eu quis ipsum\",\n   \"socialMediaLinkedAccount\": \"magna Duis\",\n   \"joined\": \"1977-01-12T21:50:06.608Z\",\n   \"postCount\": 49934101,\n   \"followers\": -34890815,\n   \"following\": 5035732,\n   \"bio\": \"veniam\",\n   \"status\": \"PrivateAccount\"\n  },\n  {\n   \"platform\": \"dolor in\",\n   \"handle\": \"id aliquip\",\n   \"verified\": true,\n   \"profileUrl\": \"fugiat do\",\n   \"profilePicUrl\": \"fugi\",\n   \"title\": \"proident Duis aute deserunt cupidatat\",\n   \"location\": \"aute in\",\n   \"workplace\": \"sint tempor elit aliqua sit\",\n   \"school\": \"fugiat magna occaecat Duis\",\n   \"livesIn\": \"ullamco consequat veniam Ut\",\n   \"from\": \"exercitati\",\n   \"facebookStatus\": \"enim laboris in\",\n   \"socialMediaLinkedAccount\": \"eiusmod reprehenderit\",\n   \"joined\": \"2020-02-05T04:10:43.515Z\",\n   \"postCount\": 49947610,\n   \"followers\": -59969905,\n   \"following\": -57418795,\n   \"bio\": \"enim\",\n   \"status\": \"NoPublicPosts\"\n  }\n ],\n \"mostRecentRunId\": \"urn:uuid:ecfa84e1-35d6-2acc-9a9a-30843663d59b\",\n \"dateAdded\": \"1945-02-02T22:35:23.527Z\",\n \"profilePicUrl\": \"proident enim non\",\n \"lastRunDate\": \"1951-02-07T15:53:07.883Z\",\n \"score\": 93418228,\n \"status\": \"Demo\",\n \"lastRunStatus\": \"RunCompleted\",\n \"lastRunStatusMessage\": \"esse f\",\n \"lastRunFinishedScraping\": \"1986-02-19T13:50:07.090Z\",\n \"currentRunStarted\": \"1945-07-31T07:41:30.327Z\",\n \"currentRunStatus\": \"None\",\n \"currentRunId\": \"0bcd2b77-a980-8403-3862-24341b5a2f3a\",\n \"backgroundReportFileName\": \"nostrud esse et incididunt\",\n \"address\": \"in cillum veniam amet ea\",\n \"city\": \"et fugiat\",\n \"state\": \"consequat dolore in\",\n \"country\": \"officia Ut\",\n \"email\": \"fug\",\n \"highSchool\": \"nisi Excepteur ullamco\",\n \"college\": \"cupidatat commodo quis do incididunt\",\n \"company\": \"culpa\",\n \"phoneNumber\": \"tempor voluptate\",\n \"twitterUrl\": \"ad dolor culpa elit aute\",\n \"facebookUrl\": \"id eu laborum\",\n \"instagramUrl\": \"tempor qui\",\n \"linkedInUrl\": \"ut\",\n \"tags\": [\n  \"magna do adipisicing\",\n  \"pariatur laboris\"\n ],\n \"riskMakeups\": [\n  {\n   \"riskName\": \"sed dolore aliquip consectetur\",\n   \"count\": -97324036\n  },\n  {\n   \"riskName\": \"aliqua deserunt mollit\",\n   \"count\": 77244761\n  }\n ],\n \"channelVolumes\": [\n  {\n   \"channelName\": \"quis ad non dolor\",\n   \"count\": -75058803\n  },\n  {\n   \"channelName\": \"dolor con\",\n   \"count\": 6465825\n  }\n ],\n \"isRedressed\": false,\n \"totalPosts\": 25260916,\n \"flaggedPosts\": -32132036,\n \"totalSentiment\": 16321485.893551916,\n \"webSearchPosts\": -34687673,\n \"hasAvailablePosts\": false,\n \"isBackgroundCheckInProgress\": false,\n \"isCurrentRunTimedOut\": false,\n \"isEnabledForContinuousScreening\": false,\n \"subscriberEnablingContinuousScreening\": \"1cfc9673-8481-9b9d-596d-93f6b46342a3\",\n \"continuousScreeningPreferences\": {\n  \"profile_name\": \"incididunt\",\n  \"risk_categories\": [\n   {\n    \"id\": 35246109,\n    \"name\": \"eiusmod ut cupidatat ullamco\",\n    \"active\": true,\n    \"sort_order\": 77206602,\n    \"risk_type\": \"Image\"\n   },\n   {\n    \"id\": 96429952,\n    \"name\": \"velit ut amet nulla\",\n    \"active\": true,\n    \"sort_order\": 84849957,\n    \"risk_type\": \"Keywords\"\n   }\n  ],\n  \"key_words\": {\n   \"is_active\": true,\n   \"key_words\": [\n    {\n     \"name\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"include_in_search\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"keyword_type\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    },\n    {\n     \"name\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"include_in_search\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     },\n     \"keyword_type\": {\n      \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n     }\n    }\n   ]\n  },\n  \"general_settings\": {\n   \"email_me\": true,\n   \"notificationEmailAddress\": \"laborum voluptate quis\",\n   \"is_flagged\": true,\n   \"is_negative\": false,\n   \"is_positive\": false,\n   \"hide_logos\": false,\n   \"includeHelpPagesOnBackgroundReport\": false,\n   \"includeHyperlinksInReports\": true,\n   \"include_web_news_posts\": true,\n   \"include_fcra\": true,\n   \"anonymizeProfilePictureInReports\": false,\n   \"includePostInsightsInReports\": false\n  },\n  \"show_archived\": false\n },\n \"continuousScreeningInterval\": \"Daily\",\n \"previousRunDate\": \"1951-08-04T07:56:06.520Z\",\n \"nextScreeningDate\": \"2004-08-30T17:24:23.353Z\",\n \"originalScreeningDate\": \"1945-06-06T03:19:40.446Z\",\n \"isAssignedToFerretlyAnalyst\": true,\n \"ageOrDateOfBirth\": \"ad irure\",\n \"isExternalApiSubject\": false,\n \"externalSystemId\": \"dolor elit in sint\",\n \"partitionKey\": \"cillum in exercitation consequat Lorem\",\n \"rowKey\": \"culpa nulla elit in consectetur\",\n \"timestamp\": \"1960-06-02T16:32:38.933Z\",\n \"eTag\": \"fugiat elit\"\n}"
+								},
+								{
+									"name": "Requested Analyst Support but organization does not have Analyst Support",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"subjectData\": {\n        \"name\": \"<string>\",\n        \"profilePicUrl\": \"<string>\",\n        \"address\": \"<string>\",\n        \"city\": \"<string>\",\n        \"state\": \"<string>\",\n        \"email\": \"<string>\",\n        \"highSchool\": \"<string>\",\n        \"college\": \"<string>\",\n        \"company\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"twitterUrl\": \"<string>\",\n        \"facebookUrl\": \"<string>\",\n        \"instagramUrl\": \"<string>\",\n        \"linkedInUrl\": \"<string>\",\n        \"tags\": [\n            \"<string>\",\n            \"<string>\"\n        ],\n        \"country\": \"<string>\",\n        \"ageOrDateOfBirth\": \"<string>\"\n    },\n    \"handles\": [\n        {\n            \"platform\": \"aliqua est culpa\",\n            \"handle\": \"ad non ullamco\",\n            \"verified\": false,\n            \"profileUrl\": \"velit sed\",\n            \"profilePicUrl\": \"\",\n            \"title\": \"sint quis ut est Ut\",\n            \"location\": \"aute laboris aliqua exercitation\",\n            \"workplace\": \"Duis\",\n            \"school\": \"repreh\",\n            \"livesIn\": \"dolor tempor irure eu\",\n            \"from\": \"E\",\n            \"facebookStatus\": \"eu\",\n            \"socialMediaLinkedAccount\": \"laboris\",\n            \"joined\": \"1990-07-19T21:15:45.204Z\",\n            \"postCount\": 58639760,\n            \"followers\": 77288410,\n            \"following\": -4206937,\n            \"bio\": \"ut sunt culpa\",\n            \"status\": \"Valid\"\n        },\n        {\n            \"platform\": \"dolore aliqua cupida\",\n            \"handle\": \"tempor commodo adipisicing\",\n            \"verified\": false,\n            \"profileUrl\": \"pariatur Lorem\",\n            \"profilePicUrl\": \"enim aliqua esse\",\n            \"title\": \"dolor officia sit nisi\",\n            \"location\": \"elit sint\",\n            \"workplace\": \"tempor ea commodo dolor\",\n            \"school\": \"sunt quis occaecat\",\n            \"livesIn\": \"aliquip ea irure\",\n            \"from\": \"sit\",\n            \"facebookStatus\": \"ipsum Duis\",\n            \"socialMediaLinkedAccount\": \"est aliqua\",\n            \"joined\": \"1977-06-06T15:46:06.601Z\",\n            \"postCount\": -57828151,\n            \"followers\": 5711157,\n            \"following\": -48343020,\n            \"bio\": \"culpa ea\",\n            \"status\": \"NoPublicPosts\"\n        }\n    ],\n    \"assignToFerretlyAnalyst\": \"<boolean>\",\n    \"externalSystemId\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Subjects",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Subjects"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"type\": \"nisi\",\n \"title\": \"ea ut pariatur deserunt\",\n \"status\": 63757810,\n \"detail\": \"ut velit ut\",\n \"instance\": \"Ut anim aliqua\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Create a new subject (no handles)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"subjectData\": {\n        \"name\": \"<string>\",\n        \"profilePicUrl\": \"<string>\",\n        \"address\": \"<string>\",\n        \"city\": \"<string>\",\n        \"state\": \"<string>\",\n        \"email\": \"<string>\",\n        \"highSchool\": \"<string>\",\n        \"college\": \"<string>\",\n        \"company\": \"<string>\",\n        \"phone\": \"<string>\",\n        \"twitterUrl\": \"<string>\",\n        \"facebookUrl\": \"<string>\",\n        \"instagramUrl\": \"<string>\",\n        \"linkedInUrl\": \"<string>\",\n        \"tags\": [\n            \"<string>\",\n            \"<string>\"\n        ],\n        \"country\": \"<string>\",\n        \"ageOrDateOfBirth\": \"<string>\"\n    },\n    \"assignToFerretlyAnalyst\": \"<boolean>\",\n    \"externalSystemId\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Subjects",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Subjects"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create New Subject - No Handles",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "{{APIKey}}",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "X-Api-Key",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"subjectData\": {\r\n        \"name\": \" Some New Subject \"\r\n    },\r\n    \"assignToFerretlyAnalyst\": true,\r\n    \"externalSystemId\": \"Subject1234_2021_01_19_001\",\r\n    \"isDebug\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/Subjects",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"Subjects"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Basic API health and settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Health/settings",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Health",
+								"settings"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Health/settings",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Health",
+										"settings"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"storageAccount\": \"sint ad enim ullamco\",\n \"storageKey\": \"aliqua est\",\n \"ferretlyAnalystEmailAddress\": \"\",\n \"subjectAssignedToYouTemplateId\": \"mollit\",\n \"emptyProfileImageUrl\": \"fugiat ut\",\n \"sendGridApiKey\": \"su\",\n \"applicationUrl\": \"ullamco elit ad\",\n \"platform\": \"Production\",\n \"isDevelopmentEnvironment\": true,\n \"fetcherManagerUrl\": \"sint aute\"\n}"
+						},
+						{
+							"name": "Not logged in",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Health/settings",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Health",
+										"settings"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"type\": \"nisi\",\n \"title\": \"ea ut pariatur deserunt\",\n \"status\": 63757810,\n \"detail\": \"ut velit ut\",\n \"instance\": \"Ut anim aliqua\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
