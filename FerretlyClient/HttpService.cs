@@ -1,7 +1,8 @@
 ﻿using System;
-using Newtonsoft.Json;
 using System.Net.Http;
-using System.Text;
+using System.Net.Http.Json;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using FerretlyClient.Configuration;
 
@@ -56,8 +57,12 @@ namespace FerretlyClient
         /// <returns></returns>
         public async Task<HttpResponseMessage> PostAsync(string url, object body)
         {
-            return await _httpClient.PostAsync(GetFullUrl(url), 
-                new StringContent(JsonConvert.SerializeObject(body), Encoding.UTF8, "application/json"));
+            return await _httpClient.PostAsJsonAsync(GetFullUrl(url), 
+                body, new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+                });
         }
 
         private string GetFullUrl(string url)

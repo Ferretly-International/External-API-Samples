@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using FerretlyClient.Configuration;
 using FerretlyClient.Models;
-using Newtonsoft.Json;
 
 namespace FerretlyClient
 {
@@ -38,7 +37,7 @@ namespace FerretlyClient
         public async Task<ApiClient> GetApiClientInfo()
         {
             var result = await Get("ApiClient");
-            return JsonConvert.DeserializeObject<ApiClient>(result);
+            return System.Text.Json.JsonSerializer.Deserialize<ApiClient>(result);
         }
 
         private async Task<string> Get(string url)
