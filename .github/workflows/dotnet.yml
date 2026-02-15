@@ -21,10 +21,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-
     steps:
     - uses: actions/checkout@v4
     - name: Setup .NET
@@ -32,22 +28,6 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore ./fetch_info/fetch_info.sln 
+      run: dotnet restore ./fetch_info/fetch_info.sln
     - name: Build
       run: dotnet build ./fetch_info/fetch_info.sln --no-restore --configuration Release
-    - name: Push Github Package
-      if: ${{ github.event_name == 'push' }}
-      run: |
-        dotnet nuget add source --username ferretly --password "${{ secrets.GITHUB_TOKEN }}" --store-password-in-clear-text --name github "https://nuget.pkg.github.com/ferretly/index.json"
-        dotnet nuget push **/*.nupkg --source github --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
-    - name: Push NuGet.org Package
-    # https://github.com/marketplace/actions/publish-nuget
-      if: ${{ github.event_name == 'push' }}
-      uses: rohith/publish-nuget@v2
-      with:
-          # Filepath of the project to be packaged, relative to root of repository
-          PROJECT_FILE_PATH: FerretlyClient/FerretlyClient.csproj
-          PACKAGE_NAME: FerretlyApiClient
-          VERSION_REGEX: ^\s*<Version>(.*)<\/Version>\s*$
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-          TAG_FORMAT: apiClient_*
