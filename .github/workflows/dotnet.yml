@@ -39,7 +39,7 @@ jobs:
       if: ${{ github.event_name == 'push' }}
       run: |
         dotnet nuget add source --username ferretly --password "${{ secrets.GITHUB_TOKEN }}" --store-password-in-clear-text --name github "https://nuget.pkg.github.com/ferretly/index.json"
-        dotnet nuget push **/*.nupkg --source github --skip-duplicate
+        dotnet nuget push **/*.nupkg --source github --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
     - name: Push NuGet.org Package
     # https://github.com/marketplace/actions/publish-nuget
       if: ${{ github.event_name == 'push' }}
